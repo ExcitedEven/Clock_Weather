@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Clock_Weather</string>
+
+    <string name="txt_date"></string>
+    <string name="txt_time"></string>
+    <string name="txt_weather"></string>
+    <string name="txt_temp"></string>
+    <string name="txt_week"></string>
+</resources>
