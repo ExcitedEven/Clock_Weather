@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context="learn.excitedeven.clock_weather.MainActivity">
 
 
@@ -16,8 +17,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="@string/txt_time"
+        android:text=""
         android:textSize="100sp"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,26 +27,28 @@
 
     <TextView
         android:id="@+id/txt_weather"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:gravity="start"
         android:onClick="onclick"
-        android:gravity="left"
-        android:text="@string/txt_weather"
+        android:text=""
         android:textSize="30sp"
+        android:textColor="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_date"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
-        android:gravity="right"
-        android:text="@string/txt_date"
+        android:gravity="end"
+        android:text=""
         android:textSize="30sp"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +61,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:onClick="onclick"
-        android:text="Button"
+        android:text="@string/buttonForTest"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/txt_time"
         app:layout_constraintEnd_toStartOf="@+id/txt_date"
         app:layout_constraintStart_toEndOf="@+id/txt_weather"
@@ -68,9 +73,10 @@
         android:layout_width="85dp"
         android:layout_height="50dp"
         android:layout_marginEnd="8dp"
-        android:gravity="right"
-        android:text="@string/txt_week"
+        android:gravity="end"
+        android:text=""
         android:textSize="30sp"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_date" />
 
@@ -80,9 +86,10 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:onClick="onclick"
-        android:text="@string/txt_temp"
-        android:gravity="left"
+        android:text=""
+        android:gravity="start"
         android:textSize="30sp"
+        android:textColor="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_weather" />
 
